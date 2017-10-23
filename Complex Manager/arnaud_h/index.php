@@ -10,7 +10,7 @@
 <header>
     <h1>Complex Manager</h1>
 </header>
-<form method="post" action=".php">
+<form method="post" action="function.php">
     <table>
         <tr>
             <th><input type="text" placeholder="Real Number" name="real_number" required></th>
