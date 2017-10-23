@@ -15,10 +15,10 @@
     <form method="post" action="function.php">
         <table>
             <tr>
-                <th><input type="text" placeholder="Real Number" name="real_number" required></th>
+                <th><input type="text" placeholder="Real Number Ex: 15" name="real_number" required></th>
             </tr>
             <tr>
-                <th><input type="text" placeholder="Imaginary Number" name="imaginary_number" required></th>
+                <th><input type="text" placeholder="Imaginary Number Ex: 35i" name="imaginary_number" required></th>
             </tr>
             <tr>
                 <th><input type="submit" value="Send"></th>
