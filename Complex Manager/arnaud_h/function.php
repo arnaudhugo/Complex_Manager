@@ -4,7 +4,7 @@ $real_number = $_POST['real_number'];
 $imaginary_number = $_POST['imaginary_number'];
 preg_match_all('([0-9]+)(i$)', $imaginary_number, $matches);
 $imaginary_number = $matches[0][0];
-$test = $matches[0][2];
+$test = $matches[0][1];
 /*
 if ()
 {
