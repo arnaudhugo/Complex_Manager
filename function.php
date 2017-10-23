@@ -11,6 +11,14 @@ if (isset($test))
 {
     echo "Imaginary Number Incorrect.";
 }
+else
+{
+    echo "Real Number: ", $real_number, "\n";
+    echo "<br />";
+    echo "Imaginary Number: ", $imaginary_number_bis, "\n";
+    echo "<br />";
+    echo $test;
+}
 /*
 if ()
 {
@@ -20,8 +28,3 @@ if ()
     }
 }
 */
-echo "Real Number: ", $real_number, "\n";
-echo "<br />";
-echo "Imaginary Number: ", $imaginary_number_bis, "\n";
-echo "<br />";
-echo $test;
