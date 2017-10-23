@@ -2,7 +2,7 @@
 include_once ('index.php');
 $real_number = $_POST['real_number'];
 $imaginary_number = $_POST['imaginary_number'];
-$imaginary_number = preg_match('[0-9]', $imaginary_number, $imaginary_number);
+$imaginary_numberbis = preg_match('[0-9]', $imaginary_number, $imaginary_numberbis);
 /*
 if ()
 {
@@ -14,4 +14,4 @@ if ()
 */
 echo "Real Number: ", $real_number, "\n";
 echo "<br />";
-echo "Imaginary Number: ", $imaginary_number, "\n";
+echo "Imaginary Number: ", $imaginary_numberbis, "\n";
