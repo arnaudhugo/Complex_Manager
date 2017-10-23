@@ -9,7 +9,7 @@ $testI = $matches[0][0];
 
 if ($testI == 'i')
 {
-    if (($real_number >= '0' && $real_number <= '9') && ($imaginary_number_bis >= '0' && $imaginary_number_bis <= '9'))
+    if ($real_number >= '0' && $real_number <= '9') // && ($imaginary_number_bis >= '0' && $imaginary_number_bis <= '9'))
     {
         echo "Real Number: ", $real_number, "\n";
         echo "<br />";
