@@ -4,10 +4,10 @@ $real_number = $_POST['real_number'];
 $imaginary_number = $_POST['imaginary_number'];
 preg_match_all('([0-9]+)', $imaginary_number, $matches);
 $imaginary_number_bis = $matches[0][0];
-preg_match_all('(i$)', $imaginary_number, $matches);
+preg_match_all('(.$)', $imaginary_number, $matches);
 $test = $matches[0][0];
 
-if (empty($test))
+if ($test != 'i')
 {
     echo "Imaginary Number Incorrect.";
 }
