@@ -22,12 +22,3 @@ if ($testI == 'i')
 }
 else
     echo "Imaginary Number Incorrect.";
-/*
-if ()
-{
-    if (($real_number >= '0' && $real_number <= '9') && ($imaginary_number >= '0' && $imaginary_number <= '9'))
-    {
-
-    }
-}
-*/

@@ -58,21 +58,3 @@ function negative_sign($string)
             return(false);
         }
 }
-/*
-if ()
-{
-    if (($real_number >= '0' && $real_number <= '9') && ($imaginary_number >= '0' && $imaginary_number <= '9'))
-    {
-
-    }
-}
-if ($real_number >= '0' && $real_number <= '9') // && ($imaginary_number_bis >= '0' && $imaginary_number_bis <= '9'))
-{
-    echo "Real Number: ", $real_number, "\n";
-    echo "<br />";
-    echo "Imaginary Number: ", $imaginary_number_bis, "\n";
-    echo "<br />";
-    echo $testI;
-}
-else
-    echo "Error saisie.";*/
