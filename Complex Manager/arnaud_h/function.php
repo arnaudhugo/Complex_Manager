@@ -7,7 +7,7 @@ $imaginary_number_bis = $matches[0][0];
 preg_match_all('(i$)', $imaginary_number, $matches);
 $test = $matches[0][0];
 
-if (isset($test))
+if (empty($test))
 {
     echo "Imaginary Number Incorrect.";
 }
