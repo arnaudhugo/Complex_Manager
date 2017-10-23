@@ -7,7 +7,9 @@
 
 <body>
 <header>
-    <h1>Complex Manager</h1>
+    <div align="center">
+        <h1>Complex Manager</h1>
+    </div>
 </header>
 <div align="center">
     <form method="post" action="function.php">
