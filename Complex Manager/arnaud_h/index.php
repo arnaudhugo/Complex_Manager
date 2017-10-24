@@ -21,7 +21,7 @@
                 <th><input type="text" placeholder="Imaginary Number Ex: 35" name="imaginary_number" required> i </th>
             </tr>
             <tr>
-                <th><input type="submit" value="Send"></th>
+                <th><input type="submit" value="Envoyer"></th>
             </tr>
         </table>
     </form>
