@@ -5,7 +5,10 @@ $imaginary_number = $_POST['imaginary_number'];
 
 if (is_numeric($real_number) && is_numeric($imaginary_number))
 {
-    echo $real_number, "+", $imaginary_number, "i";
+    if ($imaginary_number < 0)
+        echo $real_number, $imaginary_number, "i";
+    else
+        echo $real_number, "+", $imaginary_number, "i";
 }
 else
     echo "Mauvaise saisie de nombre.";
