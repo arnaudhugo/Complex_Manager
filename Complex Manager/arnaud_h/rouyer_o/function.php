@@ -44,7 +44,7 @@ function negative_sign($string)
     else
         return (false);
 }
-
+/*
 function is_float($num)
 {
     $a = 0;
@@ -57,4 +57,4 @@ function is_float($num)
             echo "Synthaxe error.";
         $a = $a + 1;
     }
-}
+}*/
