@@ -24,7 +24,6 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     echo "Argument: ";
     echo "<br />";
     echo "Ecriture trigonométrique: ";
-    echo "<canvas id=\"canvas\" width=\"500\" height=\"300\">", "your browser doesn't support canvas!", "</canvas>";
 }
 else
     echo "Mauvaise saisie.";
