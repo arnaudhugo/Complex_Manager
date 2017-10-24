@@ -12,6 +12,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "Nombre complexe:", $real_number, $imaginary_number, "i";
     else
         echo "Nombre complexe:", $real_number, "+", $imaginary_number, "i";
+    echo "<br />";
     $inverse_imaginary_number = $imaginary_number * (-1);
     echo "Inverse:", $real_number, $inverse_imaginary_number, "i";
 }
