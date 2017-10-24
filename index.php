@@ -30,7 +30,7 @@
     your browser doesn't support canvas!
 </canvas>
 <script>
-    var c = document.getElementById('mon_canvas');
+    var c = document.getElementById('canvas');
     var ctx = c.getContext("2d");
     ctx.beginPath();      // Début du chemin
     ctx.moveTo(50,50);    // Le tracé part du point 10,10
