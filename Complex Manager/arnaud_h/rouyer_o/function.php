@@ -34,7 +34,7 @@ function verif_is_number($number)
         else
             return (false);
     }
-    return (0);
+    return (false);
 }
 
 function negative_sign($string)
