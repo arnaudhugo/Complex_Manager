@@ -2,10 +2,10 @@
 include_once ('index.php');
 $real_number = $_POST['real_number'];
 $imaginary_number = $_POST['imaginary_number'];
-
+/*
 is_float($real_number);
 is_float($imaginary_number);
-
+*/
 preg_match_all('([0-9]+)', $real_number, $matches);
 $real_number_bis = $matches[0][0];
 preg_match_all('([0-9]+)', $imaginary_number, $matches);
