@@ -16,7 +16,14 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     $inverse_imaginary_number = $imaginary_number * (-1);
     echo "Conjugué: ", underZero($real_number, $inverse_imaginary_number);
     echo "<br />";
-    echo "";
+    echo "Inverse: ";
+    echo "<br />";
+    $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
+    echo "Module: ", $module; // |z| = \/a^2 + b^2
+    echo "<br />";
+    echo "Argument: ";
+    echo "<br />";
+    echo "Ecriture trigonométrique: ";
 }
 else
     echo "Mauvaise saisie.";
