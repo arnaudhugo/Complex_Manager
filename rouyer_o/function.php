@@ -9,52 +9,38 @@ $imaginary_number_bis = $matches[0][0];
 preg_match_all('(.$)', $imaginary_number, $matches);
 $testI = $matches[0][0];
 
-
-if ($testI == 'i' && verif_is_number($real_number)==true && verif_is_number($imaginary_number_bis)==true)
+if ($testI == 'i' && verif_is_number($real_number) == true && verif_is_number($imaginary_number_bis) == true)
 {
-    if(negative_sign($real_number)==true)
-    {
+    if (negative_sign($real_number) == true)
         echo "-";
-    }
     echo $real_number_bis;
-    if(negative_sign($imaginary_number)== true)
-        {
-            echo "-";
-        }
-        else
-            {
-            echo "+";
-            }
-    echo $imaginary_number_bis."i";
-}else{
-    echo "Wrong Parameters";
+    if (negative_sign($imaginary_number) == true)
+        echo "-";
+    else
+        echo "+";
+    echo $imaginary_number_bis . "i";
 }
-
+else
+    echo "Wrong Parameters";
 
 /*---------------FONCTION VERIFIANT SI LA DONNEES ENTREE EST UN NOMBRE--------------------------------------*/
 
 function verif_is_number($number)
 {
-    while(isset($number))
+    while (isset($number))
     {
         if ($number >= 0 || $number <= 9)
-        {
-            return(true);
-        }
-        else{
-            return(false);
-        }
+            return (true);
+        else
+            return (false);
     }
 
 }
 
 function negative_sign($string)
 {
-
-        if( preg_match('(-)',$string,$matches)==true)
-        {
-            return(true);
-        }else{
-            return(false);
-        }
+    if (preg_match('(-)',$string,$matches) == true)
+        return (true);
+    else
+        return (false);
 }
