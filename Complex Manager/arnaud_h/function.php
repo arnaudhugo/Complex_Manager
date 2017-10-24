@@ -19,11 +19,12 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     echo "Inverse: ";
     echo "<br />";
     $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
-    echo "Module: ", $module; // |z| = \/a^2 + b^2
+    echo "Module: ", $module; // |z| = \/a^2 + b^2 A VERIFIER !!
     echo "<br />";
     echo "Argument: ";
     echo "<br />";
     echo "Ecriture trigonométrique: ";
+    echo "<canvas id=\"myCanvas\" width=\"500\" height=\"300\">" , "your browser doesn't support canvas!" , "</canvas>";
 }
 else
     echo "Mauvaise saisie.";
