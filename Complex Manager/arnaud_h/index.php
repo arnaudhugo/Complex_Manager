@@ -25,6 +25,8 @@
             </tr>
         </table>
     </form>
+</div>
+<div align="center">
     <canvas id="canvas" width="500" height="300" style="border: dashed 1px #444;">
         your browser doesn't support canvas!
     </canvas>
