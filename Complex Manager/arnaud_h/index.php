@@ -26,6 +26,9 @@
         </table>
     </form>
 </div>
+<canvas id=\"canvas\" width=\"500\" height=\"300\">
+    your browser doesn't support canvas!
+</canvas>
 <script type="text/javascript">
     var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
