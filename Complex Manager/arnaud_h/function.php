@@ -3,15 +3,15 @@ include_once ('index.php');
 $real_number = $_POST['real_number'];
 $imaginary_number = $_POST['imaginary_number'];
 
+is_float($real_number);
+is_float($imaginary_number);
+
 preg_match_all('([0-9]+)', $real_number, $matches);
 $real_number_bis = $matches[0][0];
 preg_match_all('([0-9]+)', $imaginary_number, $matches);
 $imaginary_number_bis = $matches[0][0];
 preg_match_all('(.$)', $imaginary_number, $matches);
 $testI = $matches[0][0];
-
-is_float($real_number);
-is_float($imaginary_number);
 
 if ($testI == 'i' && is_number($real_number) == true && is_number($imaginary_number_bis) == true)
 {
