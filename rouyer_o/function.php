@@ -44,3 +44,17 @@ function negative_sign($string)
     else
         return (false);
 }
+
+function is_float($num)
+{
+    $a = 0;
+    $is_decimal = false;
+    while (isset($num[$a]))
+    {
+        if (($num[$a] == ',' || $num[$a] == '.') && $is_decimal == false)
+            $is_decimal = true;
+        else
+            echo "Synthaxe error.";
+        $a = $a + 1;
+    }
+}
