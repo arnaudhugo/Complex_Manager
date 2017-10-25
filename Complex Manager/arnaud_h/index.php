@@ -61,6 +61,15 @@
             ctx.stroke();
             i = i + 17.5;
         }
+        var i = 17.5;
+        while (i < 350)
+        {
+            ctx.beginPath();
+            ctx.moveTo(170,i);
+            ctx.lineTo(180,i);
+            ctx.stroke();
+            i = i + 17.5;
+        }
 
 
 
