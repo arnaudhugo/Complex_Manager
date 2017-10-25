@@ -36,30 +36,30 @@
 
         ctx.beginPath();
 
-        ctx.moveTo(175,0);
-        ctx.lineTo(175,350);
-        ctx.moveTo(0,175);
-        ctx.lineTo(350,175);
+        ctx.moveTo(192.5,0);
+        ctx.lineTo(192.5,385);
+        ctx.moveTo(0,192.5);
+        ctx.lineTo(385,192.5);
 
-        ctx.moveTo(175,0);
-        ctx.lineTo(165,10);
-        ctx.moveTo(175,0);
-        ctx.lineTo(185,10);
+        ctx.moveTo(192.5,0);
+        ctx.lineTo(182.5,10);
+        ctx.moveTo(195.5,0);
+        ctx.lineTo(202.5,10);
 
-        ctx.moveTo(350,175);
-        ctx.lineTo(340,165);
-        ctx.moveTo(350,175);
-        ctx.lineTo(340,185);
+        ctx.moveTo(385,192.5);
+        ctx.lineTo(375,182.5);
+        ctx.moveTo(385,192.5);
+        ctx.lineTo(375,202.5);
         ctx.stroke();
 
         var i = 17.5;
         while (i < 350)
         {
             ctx.beginPath();
-            ctx.moveTo(i,180);
-            ctx.lineTo(i,170);
-            ctx.moveTo(170,i);
-            ctx.lineTo(180,i);
+            ctx.moveTo(i,197.5);
+            ctx.lineTo(i,187.5);
+            ctx.moveTo(187.5,i);
+            ctx.lineTo(197.5,i);
             ctx.stroke();
             i = i + 17.5;
         }
