@@ -36,17 +36,17 @@
 
         ctx.beginPath();
 
-        ctx.moveTo(192.5,0);
+        ctx.moveTo(192.5,0);  // Draw line
         ctx.lineTo(192.5,385);
         ctx.moveTo(0,192.5);
         ctx.lineTo(385,192.5);
 
-        ctx.moveTo(192.5,0);
+        ctx.moveTo(192.5,0);  // Draw arrow top
         ctx.lineTo(182.5,10);
-        ctx.moveTo(195.5,0);
+        ctx.moveTo(192.5,0);
         ctx.lineTo(202.5,10);
 
-        ctx.moveTo(385,192.5);
+        ctx.moveTo(385,192.5); // Draw arrow right
         ctx.lineTo(375,182.5);
         ctx.moveTo(385,192.5);
         ctx.lineTo(375,202.5);
