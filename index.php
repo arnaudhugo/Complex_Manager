@@ -27,7 +27,7 @@
     </form>
 </div>
 <div align="center">
-    <canvas id="canvas" width="367.5" height="367.5" style="border: dashed 1px #444;">
+    <canvas id="canvas" width="385" height="385" style="border: dashed 1px #444;">
         your browser doesn't support canvas!
     </canvas>
     <script>
