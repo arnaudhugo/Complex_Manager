@@ -38,7 +38,7 @@
         ctx.lineTo(175,350);
         ctx.moveTo(0,175);
         ctx.lineTo(350,175);
-        ctx.closePath();
+        //ctx.closePath();
         ctx.stroke();
     </script>
 </div>
