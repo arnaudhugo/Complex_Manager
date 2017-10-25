@@ -53,7 +53,7 @@
         ctx.stroke();
 
         var i = 17.5;
-        while (i < 350)
+        while (i < 385)
         {
             ctx.beginPath();
             ctx.moveTo(i,197.5);
