@@ -50,17 +50,22 @@
         ctx.lineTo(340,165);
         ctx.moveTo(350,175);
         ctx.lineTo(340,185);
+        ctx.stroke();
 
-        ctx.moveTo(17.5,180);
-        ctx.lineTo(17.5,170);
-        ctx.moveTo(35,180);
-        ctx.lineTo(35,170);
-
+        var i = 17.5;
+        while (i < 350)
+        {
+            ctx.beginPath();
+            ctx.moveTo(i,180);
+            ctx.lineTo(i,170);
+            ctx.stroke();
+            i = i + 17.5;
+        }
 
 
 
         //ctx.closePath();
-        ctx.stroke();
+        //ctx.stroke();
     </script>
 </div>
 </body>
