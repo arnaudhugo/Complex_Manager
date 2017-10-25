@@ -35,6 +35,8 @@
         var ctx = c.getContext("2d");
         ctx.beginPath();
         ctx.moveTo(175,0);
+        ctx.lineTo(0,175);
+        ctx.moveTo(175,0);
         ctx.lineTo(175,350);
         ctx.moveTo(0,175);
         ctx.lineTo(350,175);
