@@ -65,8 +65,7 @@
         }
 
         ctx.beginPath();
-        ctx.moveTo(<?php echo $_POST['real_number'] ?>, <?php echo $_POST['imaginary_number'] ?>);
-        ctx.lineTo(10, 10);
+        ctx.fillRect(<?php echo ($_POST['real_number'] * 17.5) ?>, <?php echo ($_POST['imaginary_number'] * 17.5) ?>, 1, 1);
         ctx.stroke();
 
         //ctx.closePath();
