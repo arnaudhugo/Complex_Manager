@@ -52,7 +52,7 @@
         ctx.lineTo(340,185);
 
         ctx.moveTo(17.5,180);
-        ctx.lineTo(17.5,160);
+        ctx.lineTo(17.5,170);
 
 
 
