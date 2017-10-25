@@ -37,7 +37,7 @@
         ctx.moveTo(175,0);
         ctx.lineTo(165,10);
         ctx.moveTo(175,0);
-        ctx.lineTo(0,175);
+        ctx.lineTo(185,10);
 
 
         ctx.moveTo(175,0);
