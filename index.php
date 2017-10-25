@@ -51,6 +51,10 @@
         ctx.moveTo(350,175);
         ctx.lineTo(340,185);
 
+        ctx.moveTo(17.5,175);
+        ctx.lineTo(17.5,165);
+
+
 
 
         //ctx.closePath();
