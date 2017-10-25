@@ -28,7 +28,7 @@
 </div>
 <div align="center">
     <canvas id="canvas" width="385" height="385" style="border: dashed 1px #444;">
-        your browser doesn't support canvas!
+        Your browser doesn't support canvas!
     </canvas>
     <script>
         var c = document.getElementById('canvas');
@@ -63,6 +63,10 @@
             ctx.stroke();
             i = i + 17.5;
         }
+
+        ctx.beginPath();
+        ctx.moveTo(<?php $_POST['real_number'] ?>, <?php $_POST['imaginary_number'] ?>);
+        ctx.stroke();
 
         //ctx.closePath();
         //ctx.stroke();
