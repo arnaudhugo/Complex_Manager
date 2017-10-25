@@ -65,8 +65,8 @@
         }
 
         ctx.beginPath();
-        ctx.moveTo(192.5, 192.5);
-        ctx.fillRect(<?php echo ($_POST['real_number'] * 17.5) ?>, <?php echo ($_POST['imaginary_number'] * 17.5) ?>, 1, 1);
+        //ctx.moveTo(192.5, 192.5);
+        ctx.fillRect(<?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 1, 1);
         ctx.stroke();
 
         //ctx.closePath();
