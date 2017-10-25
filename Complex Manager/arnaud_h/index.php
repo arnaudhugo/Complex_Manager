@@ -33,17 +33,26 @@
     <script>
         var c = document.getElementById('canvas');
         var ctx = c.getContext("2d");
-        ctx.beginPath();
-        ctx.moveTo(175,0);
-        ctx.lineTo(165,10);
-        ctx.moveTo(175,0);
-        ctx.lineTo(185,10);
 
+        ctx.beginPath();
 
         ctx.moveTo(175,0);
         ctx.lineTo(175,350);
         ctx.moveTo(0,175);
         ctx.lineTo(350,175);
+
+        ctx.moveTo(175,0);
+        ctx.lineTo(165,10);
+        ctx.moveTo(175,0);
+        ctx.lineTo(185,10);
+
+        ctx.moveTo(350,175);
+        ctx.lineTo(340,165);
+        ctx.moveTo(350,175);
+        ctx.lineTo(340,185);
+
+
+
         //ctx.closePath();
         ctx.stroke();
     </script>
