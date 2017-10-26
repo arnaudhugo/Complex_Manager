@@ -6,7 +6,7 @@ $imaginary_number = $_POST['imaginary_number'];
 $real_number = str_replace(",", ".", $real_number);
 $imaginary_number = str_replace(",", ".", $imaginary_number);
 
-echo "<div align=\"center\">";
+echo "<div align=\"center\" class='answer'>";
 if (is_numeric($real_number) && is_numeric($imaginary_number))
 {
     if ($imaginary_number < 0)
