@@ -18,6 +18,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         Your browser doesn't support canvas!
     </canvas>
 </div>";*/
+       echo "<?php include ('canvas.php') ?>";
         echo "<br />";
         echo "<ul>";
         if ($imaginary_number < 0)
