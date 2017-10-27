@@ -47,6 +47,7 @@ function underZero($real_number, $num)
 
 /*
  * Probleme quand on teste 5.1 -- 6.9 par exemple le module ne vas pas vers le bonne endroit
+ * Probleme avec -0, le conjuge ne fonctionne pas
  * Afficher en txt |z| ?
  * Afficher arg(z) ?
  * Un outil pour zoomer avec plus de detail ? (JS, outil PHP)
