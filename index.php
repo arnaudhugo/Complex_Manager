@@ -67,7 +67,7 @@
     }
 
     //ctx.beginPath();
-    //ctx.moveTo(0, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
+
     ctx.fillRect(<?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>, 385, 385, 1);
     //ctx.closePath();
     ctx.fillStyle = 'rgb(255, 0, 0)';
