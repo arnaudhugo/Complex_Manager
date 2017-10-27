@@ -14,7 +14,6 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     if (($real_number <= '10' && $real_number >= '-10') && ($imaginary_number <= '10' && $imaginary_number >= '-10'))
     {
         include ('canvas.php');
-        echo "<br />";
         echo "<ul>";
         if ($imaginary_number < 0)
             echo "<li>Nombre complexe: ", underZero($real_number, $imaginary_number), "</li>";
