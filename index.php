@@ -67,7 +67,7 @@
     }
 
     ctx.beginPath();
-    ctx.moveTo(0, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
+    ctx.moveTo(192.5, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
     ctx.lineTo(385, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
     ctx.moveTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 0);
     ctx.lineTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 385);
