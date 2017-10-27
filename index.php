@@ -71,10 +71,10 @@
 
     ctx.beginPath();
     ctx.moveTo(192.5, 192.5);
-    if (r_nb < 0)
+    if (r_nb < 0 || i_nb < 0)
         ctx.lineTo(<?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>);
-    else if (i_nb < 0)
-        ctx.lineTo(<?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>);
+    else if (r_nb < 0 && i_nb < 0)
+        ctx.lineTo(<?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>);
     else
         ctx.lineTo(<?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 - ($_POST['imaginary_number'] * 17.5)) ?>);
 
