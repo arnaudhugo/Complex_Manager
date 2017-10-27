@@ -66,13 +66,10 @@
         i = i + 17.5;
     }
 
-    //ctx.beginPath();
-
-    ctx.fillRect(<?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>, 385, 385, 1);
-    //ctx.closePath();
-    //ctx.fillStyle = 'rgb(255, 0, 0)';
-    //ctx.fill();
-    //ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(0, <?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>);
+    ctx.lineTo(385, <?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>);
+    ctx.stroke();
 
     ctx.beginPath();
     ctx.moveTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 0);
