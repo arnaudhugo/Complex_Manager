@@ -51,6 +51,7 @@
     ctx.stroke();
 
     ctx.beginPath();  // Draw line --
+    ctx.strokeStyle='green';
     ctx.moveTo(0, (192.5 - (r_nb * 17.5)));
     ctx.lineTo(385, (192.5 - (r_nb * 17.5)));
     ctx.stroke();
