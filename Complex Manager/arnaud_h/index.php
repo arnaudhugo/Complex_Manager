@@ -32,8 +32,7 @@
         Your browser doesn't support canvas!
     </canvas>
 </div>
-<!-- <script src="js/script.js"></script> -->
- <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 <footer>
