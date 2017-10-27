@@ -31,10 +31,10 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "</ul>";
     }
     else
-        echo "/!\ Saisir nombre entre -10 et 10.";
+        echo "/!\ Erreur: Saisir nombre entre -10 et 10.";
 }
 else
-    echo "Caractere non numerique.";
+    echo "/!\ Erreur: Caractere non numerique.";
 echo "</div>";
 
 function underZero($real_number, $num)
