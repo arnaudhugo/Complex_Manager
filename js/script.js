@@ -35,9 +35,6 @@ var c = document.getElementById('canvas');
         ctx.moveTo(0, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
         ctx.lineTo(385, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
         ctx.closePath();
-        ctx.fillStyle= "green";
-        ctx.fill();
-
 
         ctx.beginPath();
         ctx.fillStyle= "rgba(255, 0, 0, 2)";
