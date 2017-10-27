@@ -1,7 +1,9 @@
 <?php
 include_once ('index.php');
 $real_number = $_POST['real_number'];
+$real_number = $real_number * 1;
 $imaginary_number = $_POST['imaginary_number'];
+$imaginary_number = $imaginary_number * 1;
 
 $real_number = str_replace(",", ".", $real_number);
 $imaginary_number = str_replace(",", ".", $imaginary_number);
@@ -20,7 +22,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     echo "Inverse: ";
     echo "<br />";
     $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
-    echo "Module: ", $module; // |z| = \/a^2 + b^2 A VERIFIER !!
+    echo "Module: ", $module; 
     echo "<br />";
     echo "Argument: ";
     echo "<br />";

@@ -1,7 +1,7 @@
-html 
-{
-	background-color: #CCCC;
+* {
+	background-color: #CCC;
 }
+
 .answer
 {
 	padding-top: 2%;
