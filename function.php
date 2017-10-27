@@ -22,7 +22,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "<li>Conjugué: ", underZero($real_number, $conjug_imaginary_number), "</li>";
         $inverse_complex_numerator = underZero($real_number, $conjug_imaginary_number);
         $inverse_complex_denominator =  pow($real_number, 2) + pow($imaginary_number, 2);
-        echo "<li>Inverse: ", $inverse_complex_numerator, "/", $inverse_complex_denominator, "</li>";
+        echo "<li>Inverse: ", "(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
         $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
         echo "<li>Module: ", round($module, 4), "</li>";
         echo "<li>Argument: ", "</li>";
