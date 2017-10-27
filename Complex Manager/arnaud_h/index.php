@@ -55,7 +55,7 @@
     ctx.stroke();
 
     var i = 17.5;
-    while (i < 385)
+    while (i < 385) // Draw | on axes
     {
         ctx.beginPath();
         ctx.moveTo(i, 197.5);
@@ -70,23 +70,21 @@
     var i_nb = <?php echo $_POST['imaginary_number'] ?>;
 
     ctx.beginPath();
-    ctx.moveTo(192.5, 192.5);
+    ctx.moveTo(192.5, 192.5);  // Draw module
     if (r_nb < 0 && i_nb < 0)
         ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
     else if (r_nb < 0 || i_nb < 0)
         ctx.lineTo((192.5 - (r_nb * 17.5)), (192.5 + (i_nb * 17.5)));
     else
         ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
-
-
     ctx.stroke();
 
-    ctx.beginPath();
+    ctx.beginPath();  // Draw line --
     ctx.moveTo(0, (192.5 - (r_nb * 17.5)));
-    ctx.lineTo(385,(192.5 - (r_nb * 17.5)));
+    ctx.lineTo(385, (192.5 - (r_nb * 17.5)));
     ctx.stroke();
 
-    ctx.beginPath();
+    ctx.beginPath();  // Draw line |
     ctx.moveTo((192.5 + (i_nb * 17.5)), 0);
     ctx.lineTo((192.5 + (i_nb * 17.5)), 385);
     ctx.stroke();
