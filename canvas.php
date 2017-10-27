@@ -42,6 +42,7 @@
 
     ctx.beginPath();
     ctx.moveTo(192.5, 192.5);  // Draw module
+    ctx.strokeStyle='blue';
     if (r_nb < 0 && i_nb < 0)
         ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
     else if (r_nb < 0 || i_nb < 0)
