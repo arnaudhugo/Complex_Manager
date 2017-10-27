@@ -72,23 +72,23 @@
     ctx.beginPath();
     ctx.moveTo(192.5, 192.5);
     if (r_nb < 0 && i_nb < 0)
-        ctx.lineTo(<?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 - ($_POST['imaginary_number'] * 17.5)) ?>);
+        ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
     else if (r_nb < 0 || i_nb < 0)
-        ctx.lineTo(<?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>);
+        ctx.lineTo((192.5 - (r_nb * 17.5)), (192.5 + (i_nb * 17.5)));
     else
-        ctx.lineTo(<?php echo (192.5 + ($_POST['real_number'] * 17.5)) ?>, <?php echo (192.5 - ($_POST['imaginary_number'] * 17.5)) ?>);
+        ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
 
 
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(0, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
-    ctx.lineTo(385, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
+    ctx.moveTo(0, (192.5 - (r_nb * 17.5)));
+    ctx.lineTo(385,(192.5 - (r_nb * 17.5)));
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 0);
-    ctx.lineTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 385);
+    ctx.moveTo((192.5 + (i_nb * 17.5)), 0);
+    ctx.lineTo((192.5 + (i_nb * 17.5)), 385);
     ctx.stroke();
 </script>
 </body>
