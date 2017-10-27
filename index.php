@@ -27,12 +27,12 @@
 </div>
 <br>
 <br>
-<div align="center">
+<!--<div align="center">
     <canvas id="canvas" width="390" height="385" style="border: dashed 1px #444;">
         Your browser doesn't support canvas!
     </canvas>
 </div>
- <script src="js/script.js"></script>
+ <script src="js/script.js"></script>-->
 </body>
 
 <footer>
