@@ -11,7 +11,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
 {
     $real_number = $real_number * 1;
     $imaginary_number = $imaginary_number * 1;
-    if (($real_number <= '10' || $real_number >= '-10') || ($imaginary_number <= '10' || $imaginary_number >= '-10'))
+    if ($real_number <= '10' || $real_number >= '-10' || $imaginary_number <= '10' || $imaginary_number >= '-10')
     {
         echo "<ul>";
         if ($imaginary_number < 0)
