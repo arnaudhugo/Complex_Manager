@@ -37,7 +37,7 @@ ctx.lineTo(385, 5);
 
         //ctx.moveTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 0);
         //ctx.lineTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 385);
-        //ctx.stroke();
+ctx.stroke();
 
         //ctx.closePath();
         //ctx.stroke();
