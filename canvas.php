@@ -57,6 +57,7 @@
     ctx.stroke();
 
     ctx.beginPath();  // Draw line |
+    ctx.strokeStyle='red';
     ctx.moveTo((192.5 + (i_nb * 17.5)), 0);
     ctx.lineTo((192.5 + (i_nb * 17.5)), 385);
     ctx.stroke();
