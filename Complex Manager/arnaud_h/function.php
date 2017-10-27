@@ -11,10 +11,51 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
 {
     $real_number = $real_number * 1;
     $imaginary_number = $imaginary_number * 1;
-    echo "<canvas id=\"canvas\" width=\"390\" height=\"385\" style=\"border: dashed 1px #444;\">
+    /*echo "<canvas id=\"canvas\" width=\"390\" height=\"385\" style=\"border: dashed 1px #444;\">
         Your browser doesn't support canvas!
     </canvas>";
-    echo "<script src=\"js/script.js\"></script>";
+    echo "<script type=\"text/javascript\">
+        var c = document.getElementById('canvas');
+        var ctx = c.getContext(\"2d\");
+
+        ctx.beginPath();
+
+        ctx.moveTo(192.5, 0);  // Draw line
+        ctx.lineTo(192.5, 385);
+        ctx.moveTo(0, 192.5);
+        ctx.lineTo(385, 192.5);
+
+        ctx.moveTo(192.5, 0);  // Draw arrow top
+        ctx.lineTo(182.5, 10);
+        ctx.moveTo(192.5, 0);
+        ctx.lineTo(202.5, 10);
+
+        ctx.moveTo(385, 192.5); // Draw arrow right
+        ctx.lineTo(375, 182.5);
+        ctx.moveTo(385, 192.5);
+        ctx.lineTo(375, 202.5);
+        ctx.stroke();
+
+        var i = 17.5;
+        while (i < 385)
+        {
+            ctx.beginPath();
+            ctx.moveTo(i, 197.5);
+            ctx.lineTo(i, 187.5);
+            ctx.moveTo(187.5, i);
+            ctx.lineTo(197.5, i);
+            ctx.stroke();
+            i = i + 17.5;
+        }
+
+        ctx.beginPath();
+        ctx.moveTo(0, <?php echo ($_POST['real_number'] * 17.5) ?>);
+        ctx.lineTo(385, <?php echo ($_POST['real_number'] * 17.5) ?>);
+        ctx.stroke();
+
+        //ctx.closePath();
+        //ctx.stroke();
+    </script>";*/
     echo "<br>";
     echo "<ul>";
     if ($imaginary_number < 0)

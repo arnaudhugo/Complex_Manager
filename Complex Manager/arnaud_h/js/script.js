@@ -32,7 +32,17 @@ var c = document.getElementById('canvas');
         }
 
         ctx.beginPath();
-        //ctx.moveTo(192.5, 192.5);
+        ctx.moveTo(0, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
+        ctx.lineTo(385, <?php echo (192.5 - ($_POST['real_number'] * 17.5)) ?>);
+        ctx.closePath();
+        ctx.fillStyle= "green";
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.fillStyle= "rgba(255, 0, 0, 2)";
+        ctx.moveTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 0);
+        ctx.lineTo(<?php echo (192.5 + ($_POST['imaginary_number'] * 17.5)) ?>, 385);
         ctx.stroke();
 
         //ctx.closePath();
