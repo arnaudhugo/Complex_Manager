@@ -13,11 +13,11 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     $imaginary_number = $imaginary_number * 1;
     if (($real_number <= '10' && $real_number >= '-10') && ($imaginary_number <= '10' && $imaginary_number >= '-10'))
     {
-        echo "<div align=\"center\">
+       /* echo "<div align=\"center\">
     <canvas id=\"canvas\" width=\"385\" height=\"385\" style=\"border: dashed 1px #444;\">
         Your browser doesn't support canvas!
     </canvas>
-</div>";
+</div>";*/
         echo "<br />";
         echo "<ul>";
         if ($imaginary_number < 0)

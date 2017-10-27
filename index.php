@@ -26,12 +26,12 @@
     </form>
 </div>
 <br>
-<br> <!--
+<br>
 <div align="center">
     <canvas id="canvas" width="385" height="385" style="border: dashed 1px #444;">
         Your browser doesn't support canvas!
     </canvas>
-</div> -->
+</div>
 <script type="text/javascript">
     var c = document.getElementById('canvas');
     var ctx = c.getContext("2d");
