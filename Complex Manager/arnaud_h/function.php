@@ -36,10 +36,10 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "</ul>";
     }
     else
-        echo "Mauvaise saisie.";
+        echo "/!\ Saisir nombre entre -10 et 10.";
 }
 else
-    echo "Mauvaise saisie.";
+    echo "Caractere non numerique.";
 echo "</div>";
 
 function underZero($real_number, $num)
