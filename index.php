@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Complex Manager</title>
-    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|El+Messiri" rel="stylesheet">    
 </head>
@@ -33,6 +32,7 @@
         Your browser doesn't support canvas!
     </canvas>
 </div>
+ <script src="js/script.js"></script>
 </body>
 
 <footer>
