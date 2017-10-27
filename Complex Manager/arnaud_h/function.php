@@ -44,3 +44,10 @@ function underZero($real_number, $num)
     else
         return ($real_number . "+" . $num . "i");
 }
+
+/*
+ * Probleme quand on teste 5.1 6.9 par exemple le module ne vas pas vers le bonne endroit
+ * Afficher en txt |z| ?
+ * Afficher arg(z) ?
+ * Un outil pour zoomer avec plus de detail ? (JS, outil PHP)
+ */
