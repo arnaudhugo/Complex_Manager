@@ -1,0 +1,31 @@
+* {
+	background-color: #CCC;
+}
+
+/*.answer
+{
+	padding-top: 4%;
+	font-family: 'El Messiri', sans-serif;
+	text-align: left;
+}*/
+ul
+{
+	list-style: none;
+	text-align: left;
+	width: 20%;
+}
+li
+{
+	font-family: 'El Messiri', sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+}
+h2
+{
+	font-family: 'Chau Philomene One', sans-serif;
+	font-size: 300%;
+}
+input
+{
+	background-color:white;
+}
