@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Complex Manager</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="cropped-favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|El+Messiri" rel="stylesheet">    
 </head>
 

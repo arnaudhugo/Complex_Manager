@@ -1,5 +1,5 @@
 <div align="center">
-    <canvas id="canvas" width="385" height="385" style="border: dashed 1px #444;">
+    <canvas id="canvas" width="385" height="385" style="border:none;">
         Your browser doesn't support canvas!
     </canvas>
 </div>

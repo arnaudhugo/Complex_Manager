@@ -26,7 +26,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "<li>Inverse (1/z): ", "(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
         $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
         echo "<li>Module (|z|): ", round($module, 4), "</li>";
-        echo "<li>Argument (arg(z)): ", "</li>";
+        echo "<li>Argument (arg(z)): ",round(atan($imaginary_number/$real_number), 4) ,"</li>";
         echo "<li>Ecriture trigonométrique: ", "</li>";
         echo "</ul>";
     }
