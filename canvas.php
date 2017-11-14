@@ -23,19 +23,33 @@
     ctx.lineTo(375, 182.5);
     ctx.moveTo(385, 192.5);
     ctx.lineTo(375, 202.5);
+    //fillText('X',192.5,375);
     ctx.stroke();
 
     var i = 17.5;
+    var text = -10;
     while (i < 385) // Draw | on axes
     {
         ctx.beginPath();
         ctx.moveTo(i, 197.5);
         ctx.lineTo(i, 187.5);
+        ctx.font = "10px Georgia";
+        if(text == 5 || text == -5 || text == 10 || text == -10 )
+        {
+        ctx.fillText(text,(i-4),210.6);
+        ctx.fillText(-text,171,(i+3));
+        }
         ctx.moveTo(187.5, i);
         ctx.lineTo(197.5, i);
+        ctx.font = "10px Georgia";
         ctx.stroke();
         i = i + 17.5;
+        text++;
     }
+    ctx.font = "20px Georgia";
+    ctx.fillText("x",370,180);
+    ctx.font = "20px Georgia";
+    ctx.fillText("y",210,15);
 
     var r_nb = <?php echo $_POST['real_number'] ?>;
     var i_nb = <?php echo $_POST['imaginary_number'] ?>;

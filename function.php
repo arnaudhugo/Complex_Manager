@@ -23,11 +23,11 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "<li>Conjugué (z*): ", underZero($real_number, $conjug_imaginary_number), "</li>";
         $inverse_complex_numerator = underZero($real_number, $conjug_imaginary_number);
         $inverse_complex_denominator =  pow($real_number, 2) + pow($imaginary_number, 2);
-        echo "<li>Inverse (1/z): ", "(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
+        echo "<li>Inverse (1/z) : " ,"(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
         $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
-        echo "<li>Module (|z|): ", round($module, 4), "</li>";
-        echo "<li>Argument (arg(z)): ",round(atan($imaginary_number/$real_number), 4) ,"</li>";
-        echo "<li>Ecriture trigonométrique: ", "</li>";
+        echo "<li>Module (|z|): ", round($module, 6), "</li>";
+        echo "<li>Argument (arg(z)): ",round(atan($imaginary_number/$real_number), 6) ,"</li>";
+        echo "<li>Ecriture trigonométrique: ".round($module,6)."[cos ". round(($real_number/$module),6) ." + isin ".round(($imaginary_number/$module),6) ."]</li>";
         echo "</ul>";
     }
     else
