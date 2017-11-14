@@ -53,6 +53,12 @@
 
     var r_nb = <?php echo $_POST['real_number'] ?>;
     var i_nb = <?php echo $_POST['imaginary_number'] ?>;
+    var rayon = Math.sqrt((i_nb*i_nb)+(r_nb*r_nb))*17.5 ;
+ 
+    ctx.beginPath();
+    ctx.strokeStyle='orange';
+    ctx.arc(192.5, 192.5, rayon, 0, 20 * Math.PI);
+    ctx.stroke();
 
     ctx.beginPath();
     ctx.moveTo(192.5, 192.5);  // Draw module
@@ -74,7 +80,7 @@
     ctx.stroke();
 
     ctx.beginPath();  // Draw line |
-    ctx.strokeStyle='red';
+    ctx.strokeStyle='green';
     ctx.moveTo((192.5 + (r_nb * 17.5)), 0);
     ctx.lineTo((192.5 + (r_nb * 17.5)), 385);
     ctx.stroke();
