@@ -45,21 +45,23 @@
     ctx.strokeStyle='blue';
     if (r_nb < 0 && i_nb < 0)
         ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
-    else if (r_nb < 0 || i_nb < 0)
-        ctx.lineTo((192.5 - (r_nb * 17.5)), (192.5 + (i_nb * 17.5)));
+    else if (i_nb < 0 && r_nb > 0)
+        ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
+    else if (r_nb < 0 && i_nb > 0) 
+        ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));    
     else
         ctx.lineTo((192.5 + (r_nb * 17.5)), (192.5 - (i_nb * 17.5)));
     ctx.stroke();
 
     ctx.beginPath();  // Draw line --
     ctx.strokeStyle='green';
-    ctx.moveTo(0, (192.5 - (r_nb * 17.5)));
-    ctx.lineTo(385, (192.5 - (r_nb * 17.5)));
+    ctx.moveTo(0, (192.5 - (i_nb * 17.5)));
+    ctx.lineTo(385, (192.5 - (i_nb * 17.5)));
     ctx.stroke();
 
     ctx.beginPath();  // Draw line |
     ctx.strokeStyle='red';
-    ctx.moveTo((192.5 + (i_nb * 17.5)), 0);
-    ctx.lineTo((192.5 + (i_nb * 17.5)), 385);
+    ctx.moveTo((192.5 + (r_nb * 17.5)), 0);
+    ctx.lineTo((192.5 + (r_nb * 17.5)), 385);
     ctx.stroke();
 </script>
