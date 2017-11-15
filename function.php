@@ -15,19 +15,17 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     {
         include ('canvas.php');
         echo "<ul>";
-        if ($imaginary_number < 0)
-            echo "<li>Nombre complexe (z): ", underZero($real_number, $imaginary_number), "</li>";
-        else
-            echo "<li>Nombre complexe (z): ", underZero($real_number, $imaginary_number),  "</li>";
+        echo "<li><u>Nombre complexe (z) :</u> ", underZero($real_number, $imaginary_number), "</li>";
         $conjug_imaginary_number = $imaginary_number * (-1);
-        echo "<li>Conjugué (z*): ", underZero($real_number, $conjug_imaginary_number), "</li>";
+        echo "<li><u>Conjugué (z*) :</u> ", underZero($real_number, $conjug_imaginary_number), "</li>";
         $inverse_complex_numerator = underZero($real_number, $conjug_imaginary_number);
         $inverse_complex_denominator =  pow($real_number, 2) + pow($imaginary_number, 2);
-        echo "<li>Inverse (1/z) : " ,"(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
+        echo "<li><u>Inverse (1/z) :</u> " ,"(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
         $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
-        echo "<li>Module (|z|): ", round($module, 6), "</li>";
-        echo "<li>Argument (arg(z)): ",round(atan($imaginary_number/$real_number), 6) ,"</li>";
-        echo "<li>Ecriture trigonométrique: ".round($module,6)."[cos ". round(($real_number/$module),6) ." + isin ".round(($imaginary_number/$module),6) ."]</li>";
+        echo "<li><u>Module (|z|) :</u> ", round($module, 6), "</li>";
+	$argument = arg($real_number, $imaginary_number);
+        echo "<li><u>Argument (arg(z)) :</u> ", $argument ,"</li>";
+        echo "<li><u>Ecriture trigonométrique :</u> " . round($module, 6) . "(cos " . round(atan(($imaginary_number/$real_number)%(2*pi())), 6) . "° + isin " . round(rad2deg(atan($imaginary_number/$real_number)), 0) . "°)</li>";
         echo "</ul>";
     }
     else
@@ -40,9 +38,25 @@ echo "</div>";
 function underZero($real_number, $num)
 {
     if ($num < 0)
-        return ($real_number . $num . "i");
+        return($real_number . $num . "i");
     else
-        return ($real_number . "+" . $num . "i");
+        return($real_number . "+" . $num . "i");
+}
+
+function arg($real_number, $imaginary_number)
+{
+	if ($real_number < 0 && $imaginary_number >= 0)
+	   return(round(atan(($imaginary_number/$real_number)+pi()), 6));
+	else if ($real_number < 0 && $imaginary_number < 0)
+	   return(round(atan(($imaginary_number/$real_number)-pi()), 6));
+	else if ($real_number = 0 && $imaginary_number > 0)
+	   return(round((pi()/2), 6));
+	else if ($real_number < 0 && $imaginary_number < 0)
+	   return(round((-pi()/2), 6));
+	else if ($real_number = 0 && $imaginary_number = 0)
+	     return(0);
+	else // $real_number > 0
+	     return(round(atan($imaginary_number/$real_number), 6));
 }
 
 /*
