@@ -23,9 +23,9 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
         echo "<li><u>Inverse (1/z) :</u> " ,"(", $inverse_complex_numerator, ")", "/", $inverse_complex_denominator, "</li>";
         $module = sqrt(pow($real_number, 2) + pow($imaginary_number, 2));
         echo "<li><u>Module (|z|) :</u> ", round($module, 6), "</li>";
-	$argument = arg($real_number, $imaginary_number);
+	    $argument = arg($real_number, $imaginary_number);
         echo "<li><u>Argument (arg(z)) :</u> ", $argument ,"</li>";
-        echo "<li><u>Ecriture trigonométrique :</u> " . round($module, 6) . "(cos " . round(atan(($imaginary_number/$real_number)%(2*pi())), 6) . "° + isin " . round(rad2deg(atan($imaginary_number/$real_number)), 0) . "°)</li>";
+        echo "<li><u>Ecriture trigonométrique :</u> " . round($module, 6) . "(cos " . round(rad2deg(atan($imaginary_number/$real_number), 6)) . "° + isin " . round(rad2deg(atan($imaginary_number/$real_number)), 0) . "°)</li>";
         echo "</ul>";
     }
     else
@@ -45,17 +45,17 @@ function underZero($real_number, $num)
 
 function arg($real_number, $imaginary_number)
 {
-	if ($real_number < 0 && $imaginary_number >= 0)
-	   return(round(atan(($imaginary_number/$real_number)+pi()), 6));
-	else if ($real_number < 0 && $imaginary_number < 0)
-	   return(round(atan(($imaginary_number/$real_number)-pi()), 6));
-	else if ($real_number = 0 && $imaginary_number > 0)
+	if ($real_number < '0' && $imaginary_number >= '0')
+	   return(round(atan(($imaginary_number/$real_number), 6));
+	else if ($real_number < '0' && $imaginary_number < '0')
+	   return(round(atan(($imaginary_number/$real_number), 6));
+	else if ($real_number == '0' && $imaginary_number > '0')
 	   return(round((pi()/2), 6));
-	else if ($real_number < 0 && $imaginary_number < 0)
+	else if ($real_number < '0' && $imaginary_number < '0')
 	   return(round((-pi()/2), 6));
-	else if ($real_number = 0 && $imaginary_number = 0)
+	else if ($real_number == '0' && $imaginary_number == '0')
 	     return(0);
-	else // $real_number > 0
+	else //$real_number > 0
 	     return(round(atan($imaginary_number/$real_number), 6));
 }
 
