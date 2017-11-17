@@ -9,6 +9,12 @@ input
     border-color: solid 0.5px black;	
     border-radius: 4px;
 }
+#result
+{
+	width: 40%;
+	margin-left: 38%;
+}
+
 canvas 
 {
 	margin-top:20px;
@@ -26,10 +32,10 @@ ul
 {
 	list-style: none;
 	text-align: left;
-	width: 35%;
 }
 li
 {
+	text-align: left;
 	font-family: 'El Messiri', sans-serif;
 	font-weight: bolder;
 	font-size: 20px;
