@@ -6,7 +6,6 @@ $imaginary_number = $_POST['imaginary_number'];
 $real_number = str_replace(",", ".", $real_number);
 $imaginary_number = str_replace(",", ".", $imaginary_number);
 
-echo "<div align=\"center\" >";
 if (is_numeric($real_number) && is_numeric($imaginary_number))
 {
     $real_number = $real_number * 1;
@@ -14,6 +13,7 @@ if (is_numeric($real_number) && is_numeric($imaginary_number))
     if (($real_number <= '10' && $real_number >= '-10') && ($imaginary_number <= '10' && $imaginary_number >= '-10'))
     {
         include ('canvas.php');
+        echo "<div id='result'>";
         echo "<ul>";
         echo "<li><u>Nombre complexe :</u></li>";
 	echo "<li>z = " . underZero($real_number, $imaginary_number) . "</li>";
