@@ -43,3 +43,6 @@ input
 {
 	background-color:white;
 }
+.zbarre:first-letter {
+    text-decoration: overline;
+}
